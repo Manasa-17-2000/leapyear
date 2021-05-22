@@ -1,16 +1,9 @@
-def is_leap(year):
-    leap = False
+year = int(input("enter the year : "))
+if (year % 4 == 0 and year % 400 == 0):
+    print(year,"is a leap year")
+elif(year % 100 ==0):
+    print(year, "not a leap year")
+else:
+    print("not a leap year")
 
 
-    if year % 400 == 0:
-        leap = True
-    elif year % 100 == 0:
-        leap = False
-    elif year % 4 == 0:
-        leap = True
-
-    return leap
-
-
-year = int(input())
-print(is_leap(year))
